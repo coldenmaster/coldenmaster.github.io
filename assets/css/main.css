@@ -24,6 +24,10 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
+div.wtt1 {
+	margin: 2em 2em 1.5em 2em;
+}
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
@@ -1849,7 +1853,7 @@ input, select, textarea {
 		border: 0;
 		cursor: pointer;
 		display: inline-block;
-		font-weight: bold;
+		font-weight: normal;
 		height: 2.85em;
 		line-height: 2.95em;
 		padding: 0 1.75em;
@@ -2324,8 +2328,16 @@ input, select, textarea {
 		.image.phone {
 			box-shadow: none;
 			border-radius: 0;
-			margin: 0 0 3em 0;
+			margin: 0 0 2em 0;
 			width: 13em;
+		}
+		
+		.image.phone2 {
+			box-shadow: none;
+			border-radius: 0;
+			margin: 0 0 2em 0;
+			width: 18em;
+			height: 24em;
 		}
 
 			.image.phone img {
@@ -2339,7 +2351,19 @@ input, select, textarea {
 				display: block;
 				border: solid 2px rgba(255, 255, 255, 0.25);
 			}
-
+/*
+			.image.phone:before, .image.phone:after, .image.phone2:before, .image.phone2:after {
+				display: block;
+				border: solid 2px rgba(255, 255, 255, 0.25);
+				background-color: black;
+			}
+*/
+			.image.phone2 .inner{
+				display: block;
+				border: solid 2px rgba(255, 255, 255, 0.25);
+				background-color: #dddddd;
+			}
+			
 			.image.phone .inner {
 				position: relative;
 			}
@@ -2351,6 +2375,14 @@ input, select, textarea {
 				}
 
 				.image.phone .inner:before {
+					top: -1.375em;
+					margin-left: -1em;
+					width: 2em;
+					height: 0.25em;
+					border-radius: 0.5em;
+					background: rgba(255, 255, 255, 0.25);
+				}
+				.image.phone2 .inner:before {
 					top: -1.375em;
 					margin-left: -1em;
 					width: 2em;
@@ -2401,6 +2433,123 @@ input, select, textarea {
 			}
 
 			.image.phone .inner:after {
+				border-color: #e6e6e6;
+			}
+
+	.image {
+		box-shadow: 0 0 0 4px #ffffff, 0 0 0 5px #e6e6e6;
+	}
+/* phone2 */
+		
+		.image.phone2 {
+			box-shadow: none;
+			border-radius: 0;
+			margin: 0 0 2em 0;
+			width: 18em;
+			height: 30em;
+		}
+
+			.image.phone2 img {
+				border-radius: 0;
+				display: block;
+				position: relative;
+				width: 100%;
+			}
+
+			.image.phone2 .inner, .image.phone2:before, .image.phone2:after {
+				display: block;
+				border: solid 2px rgba(255, 255, 255, 0.25);
+			}
+
+			.image.phone2 .inner {
+				position: relative;
+			}
+
+				.image.phone2 .inner:before, .image.phone2 .inner:after {
+					content: '';
+					position: absolute;
+					left: 50%;
+				}
+
+				.image.phone2 .inner:before {
+					top: -1.375em;
+					margin-left: -1em;
+					width: 2em;
+					height: 0.25em;
+					border-radius: 0.5em;
+					background: rgba(1, 255, 255, 0.25);
+				}
+				.image.phone2 .inner:before {
+					top: -1.375em;
+					margin-left: -1em;
+					width: 2em;
+					height: 0.25em;
+					border-radius: 0.5em;
+					background: rgba(255, 255, 255, 0.25);
+				}
+
+				.image.phone2 .inner:after {
+					bottom: -2.75em;
+					margin-left: -1em;
+					width: 2em;
+					height: 2em;
+					border-radius: 100%;
+					border: solid 2px rgba(255, 255, 255, 0.25);
+				}
+
+			.image.phone2:before, .image.phone2:after {
+				content: '';
+			}
+
+			.image.phone2:before {
+				height: 2.5em;
+				border-radius: 1em 1em 0 0;
+				border-bottom: 0;
+			}
+
+			.image.phone2:after {
+				height: 3.5em;
+				border-radius: 0 0 1em 1em;
+				border-top: 0;
+			}
+
+	.image {
+		box-shadow: 0 0 0 4px #ffffff, 0 0 0 5px #e6e6e6;
+	}
+
+		.image.phone2 {
+			box-shadow: none;
+		}
+
+			.image.phone2 .inner, .image.phone:before, .image.phone:after {
+				border-color: #e6e6e6;
+			}
+
+			.image.phone2 .inner:before {
+				background: #e6e6e6;
+			}
+
+			.image.phone2 .inner:after {
+				border-color: #e6e6e6;
+			}
+
+	.image {
+		box-shadow: 0 0 0 4px #ffffff, 0 0 0 5px #e6e6e6;
+	}
+/* phone2 end */
+		.image.phone2 {
+			box-shadow: none;
+		}
+
+			.image.phone2 .inner, .image.phone2:before, .image.phone2:after {
+				border-color: #e6e6e6;
+			}
+
+			.image.phone2 .inner:before {
+				background: #e6e6e6;
+			}
+
+			.image.phone2 .inner:after {
 				border-color: #e6e6e6;
 			}
 
@@ -2500,15 +2649,19 @@ input, select, textarea {
 		}
 
 			ul.actions.stacked li {
-				padding: 1.3em 0 0 0;
+				padding: 0.3em 0 0 0;
 			}
 
 				ul.actions.stacked li:first-child {
 					padding-top: 0;
 				}
+				
+				ul.actions.stacked li:last-child {
+					padding-top: 2em;
+				}
 
 		ul.actions.fit {
-			width: calc(100% + 1em);
+			width: calc(80% + 0.1em);
 		}
 
 			ul.actions.fit li {
@@ -3572,6 +3725,7 @@ input, select, textarea {
 
 				.wrapper > .inner {
 					width: 100%;
+					height: 100%;
 				}
 
 		}
@@ -3643,13 +3797,41 @@ input, select, textarea {
 			color: #ffffff !important;
 			box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25);
 		}
-
+/*inphone buttons */
+		#header input[type="submit"].inphone,
+		#header input[type="reset"].inphone,
+		#header input[type="button"].inphone,
+		#header button.inphone,
+		#header .button.inphone {
+			background-color: #4696e5;
+			color: #ffffff !important;
+			box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25);
+		}
+			#header button.inphone:hover,
+			#header .button.inphone:hover {
+				background-color: rgba(0, 255, 255, 0.75);
+			}
+			#header button.inphone:active,
+			#header .button.inphone:active {
+				background-color: rgba(255, 255, 0, 0.2);
+			}
+			#header button.inphone.primary,
+			#header .button.inphone.primary {
+			background-color: #a6a6e5;
+			color: #ffffff !important;
+			box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25);
+			}
+			#header button.inphone.primary:hover,
+			#header .button.inphone.primary:hover {
+				background-color: rgba(0, 255, 255, 0.75);
+			}
+/*header buttons*/
 			#header input[type="submit"]:hover,
 			#header input[type="reset"]:hover,
 			#header input[type="button"]:hover,
 			#header button:hover,
 			#header .button:hover {
-				background-color: rgba(255, 255, 255, 0.075);
+				background-color: rgba(225, 255, 255, 0.075);
 			}
 
 			#header input[type="submit"]:active,
@@ -3657,7 +3839,7 @@ input, select, textarea {
 			#header input[type="button"]:active,
 			#header button:active,
 			#header .button:active {
-				background-color: rgba(255, 255, 255, 0.2);
+				background-color: rgba(255, 255, 0, 0.2);
 			}
 
 			#header input[type="submit"].primary,
@@ -3749,11 +3931,15 @@ input, select, textarea {
 			box-shadow: 0 0 0 4px #4696e5, 0 0 0 5px rgba(255, 255, 255, 0.25);
 		}
 
-			#header .image.phone {
+			#header .image.phone .image.phone2 {
 				box-shadow: none;
 			}
 
 				#header .image.phone .inner, #header .image.phone:before, #header .image.phone:after {
+					border-color: rgba(255, 255, 255, 0.25);
+				}
+
+				#header .image.phone2 .inner, #header .image.phone2:before, #header .image.phone2:after {
 					border-color: rgba(255, 255, 255, 0.25);
 				}
 
@@ -3765,6 +3951,32 @@ input, select, textarea {
 					border-color: rgba(255, 255, 255, 0.25);
 				}
 
+				#header .image.phone2 .inner:before {
+					background: rgba(255, 255, 255, 0.25);
+				}
+
+				#header .image.phone2 .inner:after {
+					border-color: rgba(255, 255, 255, 0.25);
+				}
+/*header ul and li */
+		#header ul {
+			margin: 0 2em 1.5em 2em;
+		}
+		#header ul.wtt04ui {
+			margin: 0 2em 0.8em 1em;
+		}
+		#header div.wtttable {
+			margin: 0 2em 1.5em 2em;
+		}
+		#header table {
+			color: black;
+		}
+		#header table td {
+			padding: 0.25em 0.75em;
+		}
+
+/*wtt head end */
+		
 		#header ul.alt > li {
 			border-top-color: rgba(255, 255, 255, 0.25);
 		}
@@ -3772,11 +3984,11 @@ input, select, textarea {
 		#header table tbody tr {
 			border-color: rgba(255, 255, 255, 0.25);
 		}
-
+/*
 			#header table tbody tr:nth-child(2n + 1) {
 				background-color: rgba(255, 255, 255, 0.075);
 			}
-
+*/
 		#header table th {
 			color: #ffffff;
 		}
@@ -3810,7 +4022,10 @@ input, select, textarea {
 		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
 			color: #ffffff;
 		}
-
+		#header h3, #header h4, #header h5{
+			color: black;
+		} 
+		
 		#header blockquote {
 			border-left-color: rgba(255, 255, 255, 0.25);
 		}

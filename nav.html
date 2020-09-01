@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<!--
+	Fractal by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>BBL_TEST</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<style>
+		body {
+			margin: 0;
+		}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: auto;
+			background-color: #ddd;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			
+			//border: 1px solid #555;
+			//width: 20%;
+			//position: fixed;
+			//height: 100%;
+			//overflow: auto;
+		}	
+		li {
+			//display: block;
+			float: left;
+			border-right: 1px solid #fff;
+			//padding: 2px;
+			//margin-left: -5px;
+		}
+		li a:link, li a:visited {
+			display: block;
+			color: #fff !important;
+			background-color: #98bf21;
+			width: 100px;
+			text-align: center;
+			padding: 4px;
+			margin: 0;
+			border-bottom: 1px solid #fff;
+			text-decoration: none;			
+			text-transform: uppercase;
+		}
+		li a:hover, li a.active {
+			background-color: #7A991A;
+			color: white !important;
+		}
+		li a:hover:not(.active) {
+			background-color: #555;
+			color: white !important;
+		}
+			
+		.dropdown {
+			position: relative;
+			display: inline-block;
+			width: 120px;
+			background-color: #ddd
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,255,0.8);
+			padding: 12px 16px;
+			z-index: 6;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+	</style>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header3">
+				<ul>
+				  <li><a class="active" href="#home">主页</a></li>
+				  <li><a href="#news">新闻</a></li>
+				  <li><a href="#contact">联系</a></li>
+				  <li><a href="#about">关于</a></li>
+				  <li style="float:right"><a href="#contact">find us</a></li>
+				  <li style="float:right"><a href="#about">about us</a></li>
+				</ul>
+				<br/>
+				<br/>
+				<hr/>
+				<div class="dropdown">
+				  <span>Mouse over me</span>
+				  <div class="dropdown-content">
+					<p>Hello World!</p>
+				  </div>
+				</div>
+				<div class="dropdown">
+				  <span>Mouse over me</span>
+				  <div class="dropdown-content">
+					<p>Hello World!</p>
+				</div>
+			</header>
+
+		<!-- Scripts -->		
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
